@@ -1,9 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 100px;
+}
+
 .board{
     display: flex;
     flex-direction: column;
 
-    width: 960px;
-    height: 960px;
+    min-width: 700px;
+    height: 700px;
     
 }
 

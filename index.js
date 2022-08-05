@@ -1,4 +1,4 @@
-makeBoard(16);
+makeBoard(16 * 16);
 
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
@@ -17,11 +17,9 @@ function makeBoard(size) {
     for (let j = 0; j < col; j++) {
       const cell = document.createElement("div");
       cell.classList.add("cell");
-      cell.textContent = "hi";
-      cell.addEventListener("mouseenter", (e) => {
-        console.log(e);
-        cell.classList.add("change-color");
-      });
+
+      cell.addEventListener("mousedown", drawPixel);
+      cell.addEventListener("mouseenter", drawPixel);
       row.appendChild(cell);
     }
 
@@ -33,5 +31,12 @@ function clearBoard() {
   const board = document.querySelector(".board");
   while (board.hasChildNodes()) {
     board.removeChild(board.firstChild);
+  }
+}
+
+function drawPixel(e) {
+  console.log(e);
+  if (e.buttons >= 1) {
+    e.target.classList.add("change-color");
   }
 }
