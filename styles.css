@@ -1,0 +1,22 @@
+.board{
+    display: flex;
+    flex-direction: column;
+
+    width: 960px;
+    height: 960px;
+    
+}
+
+.row{
+    display:flex;
+    flex:1;
+}
+
+.cell{
+    border: 1px solid green;
+    flex:1;
+}
+
+.change-color{
+    background-color: black;
+}
