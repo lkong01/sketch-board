@@ -6,16 +6,22 @@ body{
 .main{
     display: flex;
     justify-content: center;
-    gap: 32px;
-    padding: 100px;
+    gap: 3rem;
+    padding: 16px 100px;
 }
 
-.board{
-    display: flex;
+.selectors{
+    display:flex;
     flex-direction: column;
-
-    min-width: 700px;
-    height: 700px;
+    width: 200px;
+}
+.board{
+    /* display: flex;
+    flex-direction: column; */
+    display:grid;
+    width: 600px;
+    height: 600px;
+    /* height: 300px; */
     
 }
 
@@ -25,10 +31,20 @@ body{
 }
 
 .cell{
-    border: 1px solid green;
-    flex:1;
+    border: 0.5px solid rgb(139, 141, 139);
+    flex:1 1 1rem;
 }
+
+
 
 .change-color{
     background-color: black;
+}
+
+.eraser-on{
+    background-color: grey;
+}
+
+.rainbow-on{
+    background-color: grey;
 }
