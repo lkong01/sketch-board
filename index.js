@@ -2,12 +2,12 @@
 const sizeInput = document.querySelector("#size-input");
 let row = sizeInput.value;
 const span = document.querySelector(".num-row");
-span.textContent = row + " * " + row;
+span.textContent = "Size: " + row + " x " + row;
 
 sizeInput.addEventListener("change", (e) => {
   console.log("new row no", e.target.value);
   row = e.target.value;
-  span.textContent = row + " * " + row;
+  span.textContent = "Size: " + row + " x " + row;
   clearBoard();
   makeBoard();
 });

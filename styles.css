@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+h1{
+    text-align: center;
+}
 
 .main{
     display: flex;
@@ -10,19 +13,26 @@ body{
     padding: 16px 100px;
 }
 
+/* **************** selectors **************************** */
 .selectors{
     display:flex;
     flex-direction: column;
     width: 200px;
+    justify-content: center;
+    gap: 0.7rem;
 }
+
+.size-selector{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ****************** board *************************** */
 .board{
-    /* display: flex;
-    flex-direction: column; */
     display:grid;
-    width: 600px;
+    min-width: 600px;
     height: 600px;
-    /* height: 300px; */
-    
 }
 
 .row{

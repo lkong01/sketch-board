@@ -10,18 +10,20 @@
     <script src="index.js" defer></script>
   </head>
   <body>
+    <h1>Sketch Board</h1>
     <div class="main">
       <div class="selectors">
-        <input
-          type="range"
-          id="size-input"
-          name="size-input"
-          min="15"
-          max="50"
-          value="30"
-        />
-
-        <span class="num-row"></span>
+        <div class="size-selector">
+          <input
+            type="range"
+            id="size-input"
+            name="size-input"
+            min="15"
+            max="50"
+            value="30"
+          />
+          <span class="num-row"></span>
+        </div>
         <input type="color" class="color-input" value="#9c9d9f" />
 
         <button class="eraser">Eraser</button>
