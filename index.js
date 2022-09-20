@@ -33,12 +33,12 @@ function makeBoard() {
 makeBoard();
 
 function clearBoard() {
-  const main = document.querySelector(".main");
-  main.removeChild(main.lastElementChild);
+  const boardWrapper = document.querySelector(".board-wrapper");
+  boardWrapper.removeChild(boardWrapper.lastElementChild);
 
   const board = document.createElement("div");
   board.classList.add("board");
-  main.appendChild(board);
+  boardWrapper.appendChild(board);
 }
 
 //color input

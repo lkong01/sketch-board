@@ -5,10 +5,11 @@ body{
     text-align: center;
     background-color: #B7C4CF;
     font-family: 'Caveat', cursive;
+    color:#3D8361;
 }
 
 h1{
-    text-align: center;
+    font-size: 3rem;
 }
 
 .main{
@@ -25,12 +26,16 @@ h1{
     width: 200px;
     justify-content: center;
     gap: 0.7rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .selectors button{
     padding: 0.5rem;
     font-size: 1rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    color:#3D8361;
+}
 }
 
 .size-selector{
@@ -80,4 +85,8 @@ h1{
 
 .rainbow-on{
     background-color: grey;
+}
+
+h2{
+    font-size:  2rem;
 }
