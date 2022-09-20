@@ -28,6 +28,15 @@ h1{
     align-items: center;
 }
 
+.color-input{
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.color-input input{
+    flex:1;
+}
 /* ****************** board *************************** */
 .board{
     display:grid;
