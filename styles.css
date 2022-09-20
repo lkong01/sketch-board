@@ -35,7 +35,14 @@ h1{
     font-family: 'Caveat', cursive;
     font-size: 1.5rem;
     color:#3D8361;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    /* background-color: #D0D0D7; */
 }
+
+.selectors button:hover, .eraser-on, .rainbow-on{
+    transform: scale(1.05);
+    background-color: #d0d0d7ca;
 }
 
 .size-selector{
@@ -53,6 +60,7 @@ h1{
 .color-input input{
     flex:1;
 }
+
 /* ****************** board *************************** */
 .board{
     display:grid;
@@ -79,13 +87,7 @@ h1{
     background-color: black;
 }
 
-.eraser-on{
-    background-color: grey;
-}
 
-.rainbow-on{
-    background-color: grey;
-}
 
 h2{
     font-size:  2rem;
