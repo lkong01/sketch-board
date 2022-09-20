@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
+    text-align: center;
+    background-color: #B7C4CF;
+    font-family: 'Caveat', cursive;
 }
 
 h1{
@@ -50,6 +53,9 @@ h1{
     display:grid;
     min-width: 600px;
     height: 600px;
+    border: 1rem solid #967E76;
+    border-radius: 0.5rem;
+    background-color: white;
 }
 
 .row{
@@ -58,7 +64,7 @@ h1{
 }
 
 .cell{
-    border: 0.5px solid rgb(139, 141, 139);
+    border: 0.1px solid rgb(225, 225, 225);
     flex:1 1 1rem;
 }
 

@@ -42,10 +42,9 @@ function clearBoard() {
 }
 
 //color input
-const colorInput = document.querySelector(".color-input");
+const colorInput = document.querySelector("#color");
 let color = colorInput.value;
 colorInput.addEventListener("change", (e) => {
-  console.log(e.target.value);
   color = colorInput.value;
 });
 
@@ -55,6 +54,7 @@ function drawPixel(e) {
   // console.log(e);
   if (e.buttons >= 1) {
     if (mode == "draw") {
+      console.log(color);
       e.target.style.backgroundColor = color;
     } else if (mode == "erase") {
       e.target.style.backgroundColor = "transparent";
@@ -84,6 +84,7 @@ rainbowMode.addEventListener("click", () => {
   if (mode == "rainbow") {
     mode = "draw";
     eraser.classList.remove("eraser-on");
+    rainbowMode.classList.remove("rainbow-on");
   } else {
     mode = "rainbow";
 
