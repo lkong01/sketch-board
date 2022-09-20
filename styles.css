@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
+
 h1{
     text-align: center;
 }
@@ -20,6 +22,12 @@ h1{
     width: 200px;
     justify-content: center;
     gap: 0.7rem;
+    font-size: 1rem;
+}
+
+.selectors button{
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
 .size-selector{
