@@ -15,4 +15,4 @@ It is implemented using plain HTML, CSS and JavaScript.
 - Eraser.
 - Clear the drawing board.
 
-<img src="./sketchboard-screenshot.png" width="500" />
+<img src="./sketchboard-screenshot.png" width="650" />
