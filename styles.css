@@ -37,7 +37,6 @@ h1{
     color:#3D8361;
     border: 1px solid grey;
     border-radius: 0.5rem;
-    /* background-color: #D0D0D7; */
 }
 
 .selectors button:hover, .eraser-on, .rainbow-on{
